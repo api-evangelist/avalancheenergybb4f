@@ -1,23 +1,51 @@
 aid: avalancheenergybb4f
+
 name: Avalancheenergybb4f
-description: 'Avalancheenergybb4f is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Avalancheenergybb4f is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling. The company appears to be a placeholder entry with limited publicly available information, and its primary purpose is to serve as a test case for the API Evangelist enrichment pipeline. Further details about its services, products, or operational scope are not currently documented.'
+
 url: https://raw.githubusercontent.com/api-evangelist/avalancheenergybb4f/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Energy
+- Technology
+- Renewable
+- Placeholder
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/avalancheenergybb4f-hosts.yml
+- type: Vendors
+  url: vendors/avalancheenergybb4f-vendors.yml
+- type: DomainSecurity
+  url: security/avalancheenergybb4f-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/avalancheenergybb4f
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
